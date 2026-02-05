@@ -1,0 +1,116 @@
+*{
+  font-family: "Poppins", sans-serif; /* tüm sayfanın yazı fotu */
+  margin: 0; /* dış boşluğu sıfırlar */
+  padding: 0; /* iç boşluğu sıfırlar */
+  box-sizing: border-box; /* genişlik ve yüksekliğe padding ve border ekler */
+}
+
+body{
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi gri */
+  background-size: auto; /* arka plan boyutu */
+  background-repeat: no-repeat; /* arka planın hareket etmemesi ve tekrarlanmaması için */
+}
+
+.menu{
+  margin: 10px;
+  display: flex; /* yatay hizalar */
+  justify-content: center; /* ortalanması için */
+  gap: 50px; /* aralarındaki boşluk değeri */
+  background: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  min-height: 40px; /* minimum yükseklik */
+  margin-top: 10px; /* üst boşluk */
+  padding: 10px; /* iç boşluk */
+}
+
+.menu a {
+  font-size: 22px; /* yazı boyutu */
+  text-decoration: none; /* linklerin altındaki çizgiyi kaldırır */
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  color: black; /* yazı rengi siyah */
+}
+
+.fa:hover{
+  color: rgb(67, 187, 214); /* yazı rengi mavi */
+}
+
+.name{
+  position: relative; /* konumu kaydırmak için kullanılır */
+  display: inline-block; /* yan yana hizalar */
+  color:rgb(32, 155, 183); /* mavi yazı rengi */
+}
+
+.icon{
+  font-size: 25px; /* yazı boyutu */
+  color: rgb(67, 187, 214); /* mavi yazı rengi */
+}
+
+.uclink{
+  gap: 50px; /* aralarındaki boşluk */
+  font-size: 20px; /* yazı boyutu */
+  margin-top: 20px; /* üst boşluk */
+}
+
+.baslik{
+  text-align: center; /* yatay ortalama */
+  margin-top: 45px; /* üst boşluk */
+  color: black; /* yazı rengi siyah */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.gg-icon{
+  display: inline-flex; /* satır içi esnek kutu */
+  gap: 10px; /* aralarındaki boşluk */
+  margin-top: auto;
+}
+
+.p-etiketi p {
+  display: flex; /* düzenli yatay hizalar */
+  justify-content: center; /* yatay ortalar */
+  align-items: center; /* ortalanması için */
+  padding-bottom: 10px;
+  font-size: 25px; /* yazı boyutu */
+}
+
+.gorsel{
+  display: flex; /* düzenli yatay hizalar */
+  justify-content: center; /* yatay ortalar */
+  flex-direction: row; /* yatay hizalar */
+  align-items: center; /* ortalar */
+  gap: 40px; /* aralarındaki boşluk */
+  margin-top: 30px; /* üst boşluk */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.urun {
+  display: flex; /* düzenli yatay hizalar */
+  flex-direction: column;
+  align-items: center; /* dikey ortalar */
+  text-align: center; /* ortalar */
+  cursor: pointer; /* mouse ile tıklanılabilir olmalı */
+}
+
+.urun img {
+  border-radius: 40px; /* kenarlarını yuvarlatma */
+  max-width: 400px; /* maximum genişlik */
+  max-height: 400px; /* maximum yükseklik */
+}
+
+.bir, .iki {
+  margin-top: 10px; /* üst boşluk */
+}
+
+.linkler{
+  margin-top: 90px; /* üst boşluk */
+  display: flex; /* yatay hizalar */
+  gap: 20px; /* aralarındaki boşluk değeri */
+  align-items: center; /* dikey ortalar */
+  justify-content: center; /* ortalanması için */
+}
+
+.e{
+  margin-top: 20px; /* üst boşluk */
+  display: flex; /* yatay hizalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  margin-bottom: 10px; /* alt boşluk */
+}

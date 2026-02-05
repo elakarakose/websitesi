@@ -1,0 +1,153 @@
+*{
+  font-family: "Poppins", sans-serif; /* Tüm elemanlar için yazı tipi */
+  margin: 0; /* dış boşlukları sıfırlar */
+  padding: 0; /* iç boşlukları sıfırlar */
+  box-sizing: border-box; /* genişlik ve yüksekliğe padding ve border ekler */
+}
+
+body{
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  background-size: auto; /* arka plan görselinin ekranı otomatik kaplaması */
+  background-repeat: no-repeat; /* arka planın tekrar etmesini engeller */
+}
+
+.container {
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  max-width: 1000px; /* maximum genişlik */
+  width: 100%; /* genişlik */
+  padding: 20px; /* iç boşluk */
+}
+
+.menu{
+  margin: 10px;
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  gap: 50px; /* aralarındaki boşluk değeri */
+  background: rgba(234, 230, 224, 0.7); /* arka plan rengi gri */
+  min-height: 40px; /* minimum yükseklik */
+  margin-top: 10px; /* üst boşluk */
+  padding: 10px; /* iç boşluk */
+}
+
+.menu a {
+  font-size: 22px; /* yazı boyutu */
+  text-decoration: none; /* linklerin altındaki çizgiyi kaldırır */
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi gri */
+  color: black; /* yazı rengi siyah */
+}
+
+.fa:hover{
+  color: rgb(67, 187, 214); /* yazının siyahtan mavi renge dönmesi */
+}
+
+.name{
+  position: relative; /* konumu kaydırmak için kullanılır */
+  display: inline-block; /* yan yana hizalar */
+  color:rgb(32, 155, 183);  /* mavi yazı rengi */
+}
+
+.icon{
+  font-size: 25px; /* yazının boyutu */
+  color: rgb(67, 187, 214); /* mavi yazı rengi */
+}
+
+.uclink{
+  gap: 50px; /* aralarındaki boşluk */
+  font-size: 20px; /* yazı boyutu */
+  margin-top: 20px; /* üst boşluk */
+}
+
+.baslik{
+  text-align: center; /* yatay ortalama */    
+  margin-top: 45px; /* üst boşluk */
+  color: black; /* siyah yazı rengi */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.gg-icon{
+  display: inline-flex; /* satır içi esnek kutu */
+  gap: 10px; /* aralarındaki boşluk değeri */
+  margin-top: auto; /* üst boşluğu otomatik şekilde aşağı iter */
+
+}
+
+.p-etiketi p {
+  display: flex; /* düzenli ve yatay hizalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  padding-bottom: 10px; /* alt kısımdan iç boşluk bırakır */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.gorseller {
+  display: flex; /* düzenli ve yatay hizalar */
+  flex-direction: column; /* görseli ve yazıyı dikey hizalar */
+  align-items: center; /* ortalanması için*/
+  gap: 40px; /* görsellerin arasındaki boşluk değeri */
+  margin-top: 30px; /* üst boşluk */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.sutun {
+  display: flex; /* düzenli yatay hizalar */
+  flex-direction: column; /* dikey olarak hizalar */
+  align-items: center; /* ortalanması için */
+  justify-content: center; /* yatay ortalar */
+  gap: 20px; /* sütunların arasındaki boşluk */
+}
+
+.urun img {
+  width: 500px; /* genişlik */
+  height: auto; /* yükseklik */
+  cursor: pointer; /* mouse üstüne geldiğinde tıklanılabilir olması için */
+  border-radius: 40px; /* köşelere değer verir yuvarlak olur */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* hafif gölge */
+}
+
+.urun p {
+  text-align: center; /* ortalanması için */
+  font-weight: 500; /* orta kalınlıkta yazı */
+  margin-top: 8px; /* üst boşluk */
+}
+
+.ust-satir {
+  display: flex; /* ortalar */
+  justify-content: center; /* yatay ortalar */
+  gap: 40px; /* aralarındaki boşluk değeri */
+}
+
+.alt-satir {
+  display: flex; /* ortalar */
+  justify-content: center; /* yatay ortalar */
+  width: 100%; /* genişliği tamamen kaplar */
+  margin-top: 30px; /* üst boşluk */
+}
+
+.dropdown{
+  border: none; /* kalınlık */
+  outline: none; /* dış çerçeveyi kaldırır */
+  background-color: #b9bdbb; /* arka plan rengi */
+  border-radius: 15px; /* kenarlarının yuvarlaklığı */
+  width: 280px; /* genişlik */
+  height: 50px; /* yükseklik */
+  font-size: 20px; /* yazı boyutu */
+  color: black; /* yazı rengi siyah */
+}
+
+.linkler{
+  margin-top: 80px; /* üst boşluk */
+  display: flex; /* ortalar */
+  gap: 20px; /* aralarındaki boşluk değeri */
+  align-items: center; /* dikey ortalar */
+  justify-content: center; /* ortalar */
+}
+
+.son{
+  margin-top: 20px; /* üst boşluk */
+  display: flex; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  justify-content: center; /* ortalar */
+  margin-bottom: 10px; /* linklerin altına boşluk ekler */
+}

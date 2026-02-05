@@ -1,0 +1,134 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-size: 1000px;
+  background-repeat: no-repeat;
+}
+.menu{
+  margin: 10px;
+  display: flex;
+  justify-content: center; /* yatay ortalar */
+  gap: 50px;
+  background: rgba(234, 230, 224, 0.7);
+  min-height: 40px; 
+  margin-top: 10px; /* üst boşluk */
+  padding: 10px;
+}
+.menu a {
+  font-size: 22px; /* yazı boyutu */
+  text-decoration: none; 
+  background-color: rgba(234, 230, 224, 0.7);
+  color: black; 
+}
+.fa:hover{
+  color: rgb(67, 187, 214);
+}
+
+.name{
+  position: relative;
+  display: inline-block;
+  color:rgb(32, 155, 183); 
+}
+
+.icon{
+  font-size: 25px; /* yazı boyutu */
+  color: rgb(67, 187, 214); 
+}
+
+
+.uclink{
+  gap: 50px; /* aralarındaki boşluk değeri */
+  font-size: 20px; /* yazı boyutu */
+  margin-top: 20px; /* üst boşluk */
+}
+
+.baslik{
+  text-align: center;
+  margin-top: 45px; /* üst boşluk */ 
+  color: black;     
+  font-size: 25px; /* yazı boyutu */
+}
+
+.gg-icon{
+  display: inline-flex;
+  color: rgb(67, 187, 214);
+  font-size: 100px;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.gorsel{
+  display: flex;
+  justify-content: center; /* yatay ortalar */
+  align-items: center; /* dikey ortalar */
+  min-height: auto; 
+  min-width: none; 
+}
+
+.gorsel img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.paragraf {
+  max-width: 600px; /* maximum genişlik */
+  margin: 20px auto; 
+  font-size: 20px; /* yazı boyutu */
+  text-align: left;
+}
+
+.paragraf p {
+  margin-top: 50px; /* üst boşluk */
+  font-size: 20px; /* yazı boyutu */
+}
+
+.gorsel2{
+  display: flex;
+  justify-content: center; /* yatay ortalar */
+  flex-direction: row;
+  align-items: center;
+  gap: 40px; /* aralarındaki boşluk değeri */
+  margin-top: 30px; /* üst boşluk */
+  font-size: 25px; /* yazı boyutu */
+}
+
+.urun2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer; /* mouse ile tıklanabilir duruma gelmesi */
+}
+
+.urun2 img {
+  border-radius: 40px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.ilk, .son {
+  margin-top: 10px; /* üst boşluk */
+  font-size: 20px; /* yazı boyutu */
+}
+
+.linkler{
+  margin-top: 90px; /* üst boşluk */
+  display: flex; /* ortalar */
+  gap: 20px; /* aralarındaki boşluk değeri */
+  align-items: center; 
+  justify-content: center; /* yatay ortalar */
+}
+
+.e{
+  margin-top: 20px; /* üst boşluk */
+  display: flex;
+  justify-content: center; /* yatay ortalar */
+  align-items: center; /* dikey ortalar */ 
+  margin-bottom: 10px; /* alt boşluk */
+}

@@ -1,0 +1,154 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: 1000px;
+    background-repeat: no-repeat;
+}
+.menu{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgba(234, 230, 224, 0.7);
+    gap: 50px; 
+    min-height: 40px; 
+    margin-top: 10px; /* üst boşluk */
+    padding: 10px;
+}
+.menu a {
+    font-size: 22px; /* yazı boyutu */
+    text-decoration: none; /* linklerin altındaki çizgiyi kaldırır */
+    background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi gri */
+    color: black; /* yazı rengi siyah */
+}
+.fa:hover{
+    color: rgb(67, 187, 214);
+}
+
+.icon{
+    font-size: 25px; /* yazı boyutu */
+    color: rgb(67, 187, 214); 
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* dikey ortalar */
+    justify-content: flex-start; 
+    text-align: center;
+    height: 40vh;
+    background-color: rgb(32, 155, 183);
+    color: white;
+    padding-top: 20px;
+}
+.wrapper h1{
+    color:white;
+    padding: 2rem;
+    font-size: 2rem; /* yazı boyutu */
+    margin-bottom: 1rem;
+}
+.wrapper p {
+    max-width: 800px;
+    font-size: 1.2rem; /* yazı boyutu */
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.custom-shape-divider-bottom-1761218081 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1761218081 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 170px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1761218081 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* gri arka planın üstünde beyaz dikdörtgen */
+.readmore {
+    background: rgba(234, 230, 224, 0.7); /* arkaplan rengi */
+    display: flex;           /* ortalanması için */
+    justify-content: center; /* ortalanması için */
+    padding: 40px 20px; /* yukarıdan / aşağıdan daha kısa */
+}
+
+.card {
+    background: #ffffff; /* arka plan rengi */
+    width: 90%;           /* yatay ve geniş olması için */
+    max-width: 1000px;    /* çok geniş olmasını önler */
+    display: flex;         /* ortalaması için */
+    gap: 40px;             /* kartların arasındaki boşluk */
+    align-items: center;   /* dikey ortalar */
+    padding: 20px 30px;    /* dikey olunca fazla yer kaplamaması için iç boşluk*/
+    border-radius: 14px;   /* kartın köşelerinin yuvarlak olması için */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08); /* hafif gölge ekler */
+    height: auto;          /* yükseklik içeriğe göre, yukarıdan aşağı kısa yapar */
+}
+
+.card-img {
+    width: 250px; /* genişlik */
+    height: 150px; /* yükseklik */
+    border-radius: 10px; /* resmin kenarlarının yuvarlak olması için */
+    object-fit: cover; /* görseli orantılı bir şekilde kırpar ve yerleştirir */
+}
+
+/* Sağdaki link paragraf */
+.card-content {
+    display: flex; /* ortalanması için */
+    flex-direction: column; /* dikey hizalar */
+    justify-content: center; /* dikey ortalar */
+    gap: 10px; /* aralarındaki boşluk değeri */
+}
+
+/* link ve text = paragraf */
+.card-link { font-size: 1.4rem; font-weight: 600; color: rgb(32, 155, 183); }
+.card-text { font-size: 1rem; color: rgb(32, 155, 183); }
+
+/* karttaki buton */
+.card-button {
+    background-color: rgb(32, 155, 183); /* arka plan rengi */
+    margin-top: 15px; /* üstten boşluk */
+    color: white; /* yazı rengi */
+    border: none; /* kenarlık kısmını kaldırır */
+    border-radius: 8px; /* kenarlarını yuvarlak yapmak için */
+    padding: 10px 20px; /* üst-alt ve sağ-sol iç boşluk değeri */
+    font-size: 1rem; /* yazı boyutu */
+    cursor: pointer; /* tıklanabilir hale gelmesi için */
+    width: fit-content; /* içeriğe göre genişlik ayarlar */
+}
+
+.card-button:hover {
+    background-color: rgb(25, 125, 150); 
+}
+
+.linkler{
+    margin-top: 40px; /* üst boşluk */
+    display: flex; /* ortalar */
+    gap: 20px; /* aralarındaki boşluk değeri */
+    align-items: center; /* dikey ortalar */
+    justify-content: center; /* ortalar */
+}
+
+.son{
+    margin-top: 20px; /* üst boşluk */
+    display: flex; /* ortalar */
+    justify-content: center; /* ortalar */
+    align-items: center; /* dikey ortalar */
+    margin-bottom: 10px; /* linklerin altına boşluk ekler */
+}

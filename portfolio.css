@@ -1,0 +1,191 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-size: 1000px;
+    background-repeat: no-repeat;
+}
+
+.menu{
+    margin: 10px;
+    display: flex;
+    justify-content: center; /* yatay ortalar */
+    gap: 50px;
+    background: rgba(234, 230, 224, 0.7);
+    min-height: 40px; 
+    margin-top: 10px; /* üst boşluk */
+    padding: 10px;
+}
+
+.menu a {
+    font-size: 22px; /* yazı boyutu */
+    text-decoration: none; 
+    background-color: rgba(234, 230, 224, 0.7);
+    color: black; 
+}
+
+.fa:hover{
+    color: rgb(67, 187, 214);
+}
+
+.name{
+    position: relative; 
+    display: inline-block;
+    color:rgb(32, 155, 183); 
+}
+
+.icon{
+    font-size: 25px;
+    color: rgb(67, 187, 214); 
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column; /* yazılar dikey sıralansın */
+    align-items: center; /* yatayda ortalansın */
+    justify-content: flex-start; /* üstte hizalansın */
+    text-align: center; /* dikey ortalar */
+    height: 40vh;
+    background-color: rgb(32, 155, 183);
+    color: white;
+    padding-top: 20px; /* biraz yukarıdan boşluk bırak */
+}
+
+.wrapper h1{
+    color:white;
+    padding: 2rem; /* iç boşluk */
+    font-size: 2rem; /* yazı boyutu */
+    margin-bottom: 1rem;
+}
+
+.wrapper p {
+    max-width: 800px; /* maximum genişlik */
+    font-size: 1.2rem; /* yazı boyutu */
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+.custom-shape-divider-bottom-1761142836 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1761142836 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 130px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1761142836 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.rectangle {
+    display: flex; /* yatay hizalar */
+    justify-content: center; /* tümünü ortalar */
+    align-items: flex-start; /* üstten hizalar */
+    flex-wrap: wrap; /* küçük ekranda alta geçmesi için */
+    background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+    gap: 30px; /* arasındaki boşluk değeri */
+    margin-top: 40px; /* üst boşluk değeri */
+}
+
+/* Her kart */
+.kutu {
+    margin-top: 50px; /* üstten boşluk değeri */
+    width: 400px; /*genişlik değeri */
+    height: 200px; /* yükseklik değeri */
+    border-radius: 15px; /* kutunun köşelerini yuvarlak yapmak için */
+    text-align: center; /* ortalar */
+    cursor: pointer; /* kutu tıklanabilir hale gelir */
+    margin-bottom: 40px; /* alttan boşluk değeri */
+}
+
+.kutu:hover {
+  transform: translate Y(-5px);
+}
+
+/* Görsel kutusu */
+.image-box {
+    margin-top: 5px; /* üstten boşluk */
+    position: relative; /* görselin konumunu kaydırmak için kullanılır */
+    border-radius: 15px; /* kutunun kenarlarının yuvarlak yapmak için kullanılır */
+    width: 100%; /* genişlik */
+    height: 200px; /* yükseklik */
+    gap: 10px; /* kutular arası boşluk değeri */
+    overflow: hidden; /* içerik taşarsa onu gizler */
+}
+
+.image-box img {
+    width: 100%; /* genişlik */
+    height: 100%; /* yükseklik */
+    object-fit: cover; /* görseli orantılı bir şekilde kırpar ve yerleştirir */
+    transition: transform 0.4s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+/* üstteki küçük beyaz etiket */
+.label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: rgb(255, 255, 255);
+    color: #222;
+    font-size: 18px; /* yazı boyutu */
+    font-weight: 700px;
+    padding: 5px 8px;
+    border-radius: 6px; /* etiketin köşelerinin yuvarlak olmasıı */
+    box-shadow: 0 10px 4px rgba(0,0,0,0.1);
+}
+
+/* buton özellikleri */
+.btn{
+    position: absolute;
+    top: 150px;
+    left: 320px;
+    background: rgba(255,255,255,0.9);
+    color: #000000;
+    font-size: 25px; /* yazı boyutu */
+    font-weight: 1500px;
+    border-radius: 5px;
+    box-shadow: 0 5px 4px rgba(0,0,0,0.1);
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: black; /* arka plan rengi siyah */
+    border: 1px solid rgb(255, 255, 255);
+    color: white; /* yazı rengi */
+}
+
+.linkler{
+    margin-top: 40px; /* üst boşluk */
+    display: flex;
+    gap: 20px;
+    align-items: center; /* dikey ortalar */
+    justify-content: center;
+}
+
+.son{
+    margin-top: 20px; /* üst boşluk */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* dikey ortalar */
+    margin-bottom: 10px;
+}

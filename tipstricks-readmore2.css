@@ -1,0 +1,131 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: 1000px;
+    background-repeat: no-repeat;
+}
+.menu{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    background: rgba(234, 230, 224, 0.7);
+    min-height: 40px; 
+    margin-top: 10px; /* üst boşluk */
+    padding: 10px;
+}
+.menu a {
+    font-size: 22px; /* yazı boyutu */
+    text-decoration: none; 
+    background-color: rgba(234, 230, 224, 0.7);
+    color: black; 
+}
+.fa:hover{
+    color: rgb(67, 187, 214);
+}
+
+.name{
+    position: relative;
+    display: inline-block;
+    color:rgb(32, 155, 183); 
+}
+
+.icon{
+    font-size: 25px; /* yazı boyutu */
+    color: rgb(67, 187, 214); 
+}
+
+.uclink{
+    gap: 50px;
+    font-size: 20px; /* yazı boyutu */
+    margin-top: 20px; /* üst boşluk */
+}
+
+.baslik{
+    text-align: center;
+    margin-top: 45px; /* üst boşluk */
+    color: black;     
+    font-size: 25px; /* yazı boyutu */
+}
+
+.gg-icon{
+    display: inline-flex;
+    color: rgb(67, 187, 214);
+    font-size: 100px; /* yazı boyutu */
+    gap: 10px;
+    margin-top: auto;
+}
+
+.gorsel{
+    display: flex;
+    justify-content: center;
+    align-items: center; /* dikey ortalar */
+    min-height: auto;
+    min-width: none;
+}
+
+.gorsel img {
+    max-width: 600px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.paragraf {
+  max-width: 600px;
+  margin: 20px auto; 
+  font-size: 20px; /* yazı boyutu */
+  text-align: left;
+}
+
+.paragraf p {
+    font-size: 20px; /* yazı boyutu */
+}
+
+.gorsel2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center; /* dikey ortalar */
+  gap: 40px;
+  margin-top: 30px; /* üst boşluk */
+}
+
+.urun2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* dikey ortalar */
+  text-align: center;
+  cursor: pointer;
+}
+
+.urun2 img {
+  border-radius: 40px;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.ilk, .son {
+  margin-top: 10px; /* üst boşluk */
+  font-size: 20px; /* yazı boyutu */
+}
+
+.linkler{
+    margin-top: 80px; /* üst boşluk */
+    display: flex;
+    gap: 20px;
+    align-items: center; /* dikey ortalar */
+    justify-content: center;
+}
+
+.son{
+    margin-top: 20px; /* üst boşluk */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* dikey ortalar */
+    margin-bottom: 10px;
+}

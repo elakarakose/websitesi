@@ -1,0 +1,137 @@
+/*@import url(https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+SAS:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);
+
+body{
+    font-family: "Poppins", sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #f2f2f2;
+    height: 120px;
+    padding: 15px 0;
+}
+
+.logo{
+    width: 100px;
+}
+
+.logo img{
+    width: 100px;
+}
+
+nav{
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu{
+    margin-top: 25px;
+    position: relative;
+}
+
+.selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    line-height: 3.5;
+    width: 100px;
+}
+
+.selected-lang:before {
+    content: '';
+    display: block;
+    width: 55px;
+    height: 45px;
+    background-image: url(https://flagcdn.com/us.svg);
+    background-size: cover;
+}
+
+.lang-menu ul{
+    margin-top: 10px;
+    padding: 0;
+    background-color:#dddcdc;
+    border: 1px solid #f2f2f2;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position:absolute;
+    top: 40px;
+    left: 0;
+}
+
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a{
+    width: 200px;
+    display: block;
+    padding: 5px 10px;
+}
+
+.lang-menu ul li a:before{
+    content: '';
+    display: inline-block;
+    width: 70px;
+    height: 45px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2;
+}
+
+.tr:before {
+    background-image: url(https://flagcdn.com/w80/tr.png);
+}
+
+.fr:before {
+    background-image: url(https://flagcdn.com/w80/fr.png);
+}
+
+.pt:before {
+    background-image: url(https://flagcdn.com/w80/pt.png);
+}
+
+.es:before {
+    background-image: url(https://flagcdn.com/w80/es.png);
+}
+
+.ae:before {
+    background-image: url(https://flagcdn.com/w80/ae.png);
+}
+
+.lang-menu:hover{
+    display: block;
+}
+
+.linkler{
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.son{
+    margin-top: 4px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 10px; 
+}/*

@@ -1,0 +1,210 @@
+*{ 
+    font-family: "Poppins", sans-serif; /* tüm sayfanın yazı tipi */
+    margin: 0; /* dış boşlukları sıfırlar */
+    padding: 0; /* iç boşlukları sıfırlar */
+    box-sizing: border-box; /* genişlik ve yüksekliğe padding ve border eklenir */
+}
+
+body {
+    background-color: white; /* sadece header kısmı beyaz kalsın */
+}
+
+.menu{
+    background: rgba(234, 230, 224, 0.7);
+    margin: 10px; /* üst boşluk */
+    display: flex; /* düzenli yatay hizalar */
+    justify-content: center; /* ortalanması için */
+    gap: 50px; /* aralarındaki boşluk değeri */
+    min-height: 40px; /* minimum yükseklik */
+    margin-top: 10px; /* üst boşluk */
+    padding: 10px; /* iç boşluk */
+}
+.menu a {
+    font-size: 22px; /* yazı boyutu */
+    text-decoration: none; /* link altındaki çizgiyi kaldırır */
+    color: black; /* yazı rengi siyah */
+}
+.fa:hover{
+    color: rgb(67, 187, 214);
+}
+.name{
+    position: relative; /* konumunu kaydırır ve ortalar */
+    display: inline-block;
+    color:rgb(32, 155, 183); 
+}
+.icon{
+    font-size: 25px;
+    color: rgb(67, 187, 214); 
+}
+
+/* Header */
+.wrapper{
+    position: relative; /* konumunu kaydırır ve ortalar */
+    display: flex; /* yatay hizalar */
+    flex-direction: column; /* dikey hizalar */
+    align-items: center; /* ortalaması için */
+    justify-content: flex-start; /* içeriği hizalar */
+    text-align: center; /* yatay ortalar */
+    height: 40vh; /* yükseklik */
+    background-color: rgb(32, 155, 183); /* mavi arka plan */
+    color: white; /* yazı rengi beyaz */
+    padding-top: 20px; /* alt iç boşluk */
+}
+
+.wrapper h1{
+    color:white; /* yazı rengi beyaz */
+    padding: 2rem; /* iç boşluk */
+    font-size: 2rem; /* yazı boyutu */
+    margin-bottom: 1rem; /* alt boşluk */
+}
+.wrapper p {
+    max-width: 800px; /* maximum genişlik */
+    font-size: 1.2rem; /* yazı boyutu */
+    line-height: 1.5; /* satır yüksekliği */
+    padding: 0 20px; /* iç boşluk */
+}
+
+.custom-shape-divider-bottom-1761292877 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1761292877 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 155px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1761292877 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/* Harita ve Beyaz Kart */
+.harita-section {
+    margin-top: 60px; /* üst boşluk */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.harita {
+    width: 1200px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Beyaz Kart */
+.beyaz-card {
+    background-color: white; /* beyaz arka plan */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%; /* genişlik değeri */
+    max-width: 1000px; /* maximum genişlik */
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2); /* hafif gölge */
+    z-index: 2;
+    margin-top: -200px; /* haritanın üstüne gelmesi için */
+}
+
+.contact-left, .contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-left .title, .contact-right .title {
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.contact-left .info a, .contact-right .info a {
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-left .info i, .contact-right .info i {
+    margin-right: 8px;
+    color: #2196f3;
+}
+
+/* Form */
+.contact-form {
+    display: flex; /* düzenli ve yatay ortalar */
+    flex-direction: column; /* dikey hizalar */
+    gap: 15px; /* aralarındaki boşluk değeri */
+    margin-top: 20px; /* üst boşluk */
+}
+
+.input-row {
+    display: flex; /* düzenli ve yatay hizalar */
+    gap: 10px; /* aralarındaki boşluk değeri */
+}
+
+.small-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="email"] {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message-input {
+    padding: 15px;
+    height: 120px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form .btn {
+    background-color: #2196f3;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; 
+    cursor: pointer;
+}
+
+.contact-form .btn:hover {
+    background-color: #1976d2;
+}
+
+.white-background {
+  background-color: #fff; /* arka plan rengi */
+  height: 50px; /* yükseklik */
+}
+
+.linkler{
+    margin-top: 80px; /* üst boşluk */
+    display: flex; /* ortalar */
+    gap: 20px; /* aralarındaki boşluk değeri */
+    align-items: center; /* dikey ortalar */
+    justify-content: center; /* ortalar */
+    text-decoration: none; /* linklerin altındaki çizgiyi kaldırır */
+}
+
+.son{
+    margin-top: 20px; /* üst boşluk */
+    display: flex; /* ortalar */
+    align-items: center; /* dikey ortalar */
+    justify-content: center; /* ortalar */
+    margin-bottom: 10px; /* linklerin altına boşluk ekler */
+}

@@ -1,0 +1,152 @@
+*{ 
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* dikey ortalar */
+    background-color: #f5f5f5;
+    position: relative;
+}
+
+/* X ikonunu sol üst köşeye sabitlemesi için */
+.close-icon {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 60px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* FACEBOOK + GOOGLE */
+.social-row {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 300px;
+    width: 85%;
+    justify-content: center;
+}
+
+/* Facebook ikon + buton kısmı */
+.facebook-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Google ikon + buton kısmı */
+.google-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* İkonlar */
+.facebook-icon,
+.google-icon {
+    font-size: 30px;
+}
+
+/* Facebook Butonu */
+.btn2 { 
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(77, 88, 107);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0 12px;
+    border-radius: 5px;
+}
+
+/* Google Butonu */
+.btn3 {
+    flex: 1;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgb(184, 80, 80);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 0 12px;
+    border-radius: 5px;
+}
+
+.gray-box {
+    width: 500px;
+    height: 500px;
+    background-color: #ccc9c9;
+    position: relative; /* kendi konumuna göre konumlandırır. */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* üstten dikey hizalar */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* gölge */
+}
+
+.mavibaslik{
+    display: flex; /* yatay hizalar */
+    justify-content: center; /* ortalar */
+    align-items: center; /* yazıyı ortalar */
+    font-size: 30px; /* yazı boyutu */
+    width: 100%;
+    height: 80px;
+    background-color: #007bff;
+    color: white; /* yazı rengi */
+    margin-top: -15px; /* üst boşluk */
+    position: absolute; /* sabit ve hizalı olması için */
+    cursor: pointer;
+    top: 15px; /* üst */
+    font-weight: bold; /* yazı tipi kalın */
+}
+.email{
+    width: 85%;
+    height: 40px;
+    text-align: center;
+    margin-top: 90px;
+    position: absolute;
+    top: 10px;
+    font-size: 18px; /* yazı boyutu */
+}
+
+.btn{
+    width: 85%;
+    height: 40px;
+    position: absolute;
+    text-align: center; /* dikey ortalar */
+    font-size: 18px; /* yazı boyutu */
+    margin-top: 150px; /* üst boşluk */
+    background-color:#007bff;
+    color:#f5f5f5; /* yazı rengi */
+    cursor: pointer;
+}
+
+.yazi{
+    width: 85%;
+    height: 40px;
+    font-size: 18px; /* yazı boyutu */
+    position: absolute;
+    text-align: center; /* dikey ortalar */
+    margin-top: 210px; /* üst boşluk */
+}
+
+/* Anasayfa'ya geri dön butonu */
+.geridön{
+    width: 200px; /* genişlik */
+    height: 40px; /* yükseklik */
+    font-size: 18px; /* yazı boyutu */
+    text-align: center; /* dikey ortalar */
+    justify-content: center;
+    border-radius: 7px;
+    margin-top: 450px; /* üst boşluk */
+    cursor: pointer; /* buton tıklanılabilir duruma gelmesi */
+}

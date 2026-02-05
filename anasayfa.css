@@ -1,0 +1,469 @@
+*{
+  font-family: "Poppins", sans-serif; /* tüm sayfanın yazı fontu */
+  margin: 0; /* dış boşluğu sıfırlar */
+  padding: 0; /* iç boşluğu sıfırlar */
+  box-sizing: border-box; /* padding ve border, width ve height'in içine dahil edilir */
+  background-repeat: no-repeat; /* arka planın tekrarlanmaması için */
+}
+
+.body{
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  background-size: cover; /* arka plan boyutunun tümünü kaplar */
+  background-repeat: no-repeat; /* arka planın tekrarlanmaması için */
+}
+
+.kahvegif{
+  position: relative; /* konumu kaydırmak için kullanılır */
+  min-width: 80px; /* minimum genişlik */
+  min-height: 20px; /* minimum yükseklik */
+  font-size: 20px; /* yazının boyutu */
+  padding: 40px; /* iç boşluk */
+}
+
+.kahvetextt{
+  position: absolute;   /*  gif üstüne yazıyı yerleştirir */
+  top: 50%;             /*  dikey ortalar */
+  left: 50%;            /*  yatay ortalar */
+  transform: translate(-50%, -50%); /*  tam ortalar */
+  color: white;         /* yazı rengi */
+  font-weight: bold;      /* yazıyı kalın yapar */
+  font-size: 40px;      /*  yazı boyutu */
+  display: flex;        /* yatay hizalar */
+  text-align: center;   /* ortalaması için */
+  justify-content: center; /* ortalaması için */
+}
+
+.menu{
+  display: flex;           /* düzenli yatay hizalar */
+  justify-content: center; /* yatay ortalar */
+  gap: 60px;               /* linklerin arasındaki boşluk */
+  background: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  min-height: 50px;  /* minimum yükseklik */
+  margin-top: 10px;  /* üstten boşluk değeri */
+  padding: 10px;     /* iç boşluk değeri */
+}
+.menu a {
+  font-size: 22px; /* linklerin yazı boyutunu büyütür */
+  text-decoration: none; /* linkin alt çizgisini kaldırır */
+  color: black; /* yazı rengini belirler */
+}
+
+.fa:hover{
+  color: rgb(67, 187, 214); /*icon'a tıklandığında değişecek olan rengi belirler */
+}
+
+.a{
+  color: black; /* yazı rengini siyah yapar */
+  text-decoration: none; /* link altındaki çizgiyi kaldırır */
+}
+
+.icon{
+  font-size: 25px;  /* yazı boyutu */
+  color: rgb(67, 187, 214); /* yazı rengi */
+}
+
+.bggray{
+  display: flex; /* Yatay hizalar */
+  justify-content: center; /* ortalaması için */
+  align-items: center; /* ortalaması için */
+  margin-top: 10px; /*üstten boşluk */
+  color:rgb(67, 187, 214); /* yazı rengi */
+  font-size: 30px; /* yazının boyutu */
+}
+
+.pre{
+  color:black; /* yazı rengi siyah */
+  font-size: 25px; /* yazı boyutu */
+  margin-top: 5px; /* üstten boşluk */
+  display: flex;  /* Yatay hizalar */
+  justify-content: center; /* ortalanması için */
+  align-items: center; /* ortalaması için */
+}
+
+.btn{
+  width: 490px; /* genişlik değeri */
+  height: 70px; /* yükseklik değeri */
+  font-size: 25px; /* yazı boyutu */
+  background-color: rgb(67, 187, 214); /* arka plan rengi */
+  color: white; /* yazı rengini ayarlar */
+  border: none; /* butonun kenarlarını kaldırır */
+  border-radius: 8px; /* köşelere değer verir yuvarlak olur */
+  cursor: pointer; /* fare el işaretine döner - tıklanılabilir */
+  display: block; /* tüm genişliği kaplar */
+  margin: 30px auto; /* üst-alt 30px ve yatay ortalama */
+  transition: 0.4s; /* geçiş süresi */
+  text-decoration: none; /* link altındaki çizgiyi kaldırır */
+  line-height: 50px; /* buton yüksekliği ile aynı yapar */
+  text-align: center; /* butonun üstündeki yazıyı ortalar */
+}
+.btn:hover{
+  background-color: rgb(67, 187, 214); /* arka plan rengi */
+  border: 1px solid rgb(72, 122, 168); /* butonun köşelerini ayarlar */
+  color:white; /* butonun üstündeki yazının rengini belirler */
+}
+
+:root{
+  --circle-size: 150px; /* daire çapı */
+  --gap: 200px;          /* dairelerin arasındaki boşluk */
+  --container-pad: 24px; /* dışardaki boşluğun iç kısmı */
+  --margin-top: 5px; /* üstten boşluk */
+}
+/* === KUTU (CONTAINER) === */
+.box {
+  background: rgba(234, 230, 224, 0.7); /* arkaplan rengi */
+  padding: var(--container-pad); /* içten boşluk değerinin dışardaki ile aynı boşlukta olması */
+  border-radius: 12px; /* kenarları yuvarlak yapar */
+  box-shadow: 0 6px 18px rgba(20,20,40,0.08); /* hafif gölge */
+  display: flex; /* yatay hizalar */
+  gap: var(--gap); /* dairelerin arasında olan boşluk */
+  align-items: flex-start; /* baştan düzgün hizalar */
+  justify-content: center; /* ortalanması için */
+}
+
+/* === LİNK (daireler) === */
+.circle-link{
+  display: inline-block; /* yan yana hizalar */
+  width: var(--circle-size); /* genişlik değerinin daire ile aynı olması */
+  height: var(--circle-size); /* yükseklik değerinin daire ile aynı olması */
+  text-decoration: none; /* linklerin altındaki çizgiyi kaldırmak için */
+  border-radius: 50%; /* kenarlarını %50 yuvarlak yapar */
+  overflow: hidden; /* içerik taşmasın diye gizler ve görünmemesini sağlar. */
+  transition: transform 160ms ease, box-shadow 160ms ease; /* geçiş süreleri */
+}
+
+/* === DAİRENİN GÖRÜNÜMÜ === */
+.circle {
+  width: 100%; /* genişlik değeri */
+  height: 100%; /* yükseklik değeri */
+  display: flex; /* yatay hizalar */
+  align-items: center; /* ortalaması için */
+  justify-content: center; /* ortalaması için */
+  border-radius: 50%; /* dairenin köşelerini yuvarlak yapmak için */
+  color: black; /* yazı rengi */
+  font-weight: 600; /* yazının genişliği */
+  font-size: 1.25rem; /* yazının boyutu */
+}
+
+.circle-container {
+  display: flex; /* yatay hizalar */
+  flex-direction: column; /* daire ve yazıyı dikey hizalar */
+  align-items: center; /* ortalaması için */
+}
+
+/* === RENKLER === */
+.circle.c-1 {
+  background-image: url("/NEW-web-site/NEW-lmage/daire1.jpeg"); /* arka plan görselinin bağlantısı */
+  background-size: cover;       /* görsel daireye tam yerleştirir */
+  background-position: center;  /* görseli ortalar */
+}
+.circle.c-2 {
+  background-image: url("/NEW-web-site/NEW-lmage/daire2.jpg"); /* arka plan görselinin bağlantısı */
+  background-size: cover;       /* görsel daireye tam oturur */
+  background-position: center;  /* görseli ortalar */
+}
+.circle.c-3 {
+  background-image: url("/NEW-web-site/NEW-lmage/daire3.jpeg"); /* arka plan görselinin bağlantısı */
+  background-size: cover;       /* görsel daireye tam oturur */
+  background-position: center;  /* görseli ortalar */
+}
+
+/* HOVER ve FOCUS efektleri */
+.circle-link:hover,
+.circle-link:focus-visible {
+  transform: translate Y(-6px) scale(1.02); /* geçiş süresi */
+  box-shadow: 0 10px 26px rgba(24,40,80,0.12); /* gölge ekleme */
+}
+
+/* RESPONSIVE */
+@media (max-width:480px){
+  :root { --circle-size: 70px; --gap: 12px; --container-pad: 14px; }
+  .circle { font-size: 0.85rem; }
+}
+
+.description {
+  max-width: 100px; /* paragrafın maximum genişliği */
+  margin: 10px auto 0 auto; /* ortalamak ve üstten boşluk bırakmak için */
+  font-size: 15px; /* yazı boyutu */
+  line-height: 1.2; /* satır aralığı */
+  color: #000000; /* yazı rengi */
+  text-align: center; /* paragrafı ortalamak için */
+}
+
+/* Ana kapsayıcı */
+.section {
+  display: flex; /* yatay hizalar */
+  justify-content: center; /* ortalaması için */
+  align-items: flex-start; /* üstten hizalar */
+  gap: 50px; /* arasındaki boşluk */
+  flex-wrap: wrap; /* küçük ekranda alta geçmesi için */
+  max-width: 1100px; /* maximum genişlik değeri */
+  margin: 0 auto; /* yatay ortalar */
+}
+
+/* Her sütun */
+.card {
+  display: flex; /* Yatay hizalar */
+  flex-direction: column; /* dikey olarak sıralar */
+  align-items: center; /* Daire, başlık, paragraf hepsi ortalanır */
+  width: 300px; /* genişliği ayarlar */
+  text-align: center; /* yazıyı ortalar */
+}
+.circle:hover {
+  transform: scale(1.05); /* geçiş süresi */
+}
+
+/* Başlık */
+.card h3 {
+  font-size: 20px; /* yazı boyutunu belirler */
+  margin-bottom: 12px; /* aşağıdan boşluk bırakır */
+  color: #222; /* yazının rengini belirler */
+}
+
+/* Paragraf */
+.card p {
+  font-size: 20px; /* yazı boyutunu belirler */
+  line-height: 1.6; /* satır yüksekliği */
+  color: #555; /*yazının rengini belirler */
+  max-width: 250px; /* maximum genişliği ayarlar */
+}
+
+.cards {
+  display: flex; /* kartları yatay hizalar */
+  justify-content: center; /* kartların tümünü ortalar */
+  gap: 20px; /* kartlar arasındaki boşluk */
+  flex-wrap: wrap; /* küçük ekranda alta geçmesi için */
+  margin-top: 30px; /* tüm satırın üstünde boşluk bırakır */
+}
+
+.blue-button {
+  display: inline-block; /* yan yana hizalar */
+  background-color: #007bff; /* butonun arka plan rengini seçer */
+  color: white; /* yazı rengi */
+  padding: 18px; /* iç boşluk */
+  margin-top: 30px; /* üstten boşluk */
+  border-radius: 8px; /* butonun kenarlarını yuvarlak yapar */
+  text-decoration: none; /* linkin altndaki çizgiyi kaldırır. */
+  font-weight: 300; /* yazının genişliğini belirler */
+  transition: background-color 0.3s ease; /* geçiş süresi */
+}
+
+.store{
+  text-align: center; /* yazı ve ikonları ortalar */
+  margin-top: 45px; /* üstten boşluk ayarlar */
+  color: black;  /* yazı rengi siyah */
+  font-size: 25px; /* yazının boyutunu ayarlar */
+  background-color: white; /* arka plan rengi beyaz */
+}
+
+.icons {
+  display: inline-flex; /* ikonları yatayda yan yana göster */
+  gap: 10px; /* ikonlar arası boşluk */
+  margin-top: 10px; /* üstten boşluk */
+}
+
+.bigkutu { 
+  display: flex; /* yatay hizalar */
+  justify-content: center; /* tümünü ortalar */
+  align-items: flex-start; /* üstten hizalar */
+  flex-wrap: wrap; /* küçük ekranda alta geçmesi için */
+  gap: 100px; /* arasındaki boşluk değeri */
+  margin-top: 40px; /* üstten olan boşluk değeri */
+}
+
+/* Her kart */
+.kutu {
+  width: 300px; /*genişlik değeri */
+  background: #fff; /* arka plan rengi */
+  border-radius: 12px; /* kutunun köşelerini yuvarlak yapmak için */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08); /* yumuşak gölge */
+  overflow: hidden; /* taşan içeriği gizle */
+  text-align: center; /* ortalar */
+  cursor: pointer; /* fare tıklanabilir hale gelir */
+  transition: transform 0.3s ease; /* geçiş süresi */
+}
+
+.kutu:hover {
+  transform: translate Y(-5px); /* kutuyu vurgular */
+}
+
+/* Görsel kutusu */
+.image-box {
+  position: relative; /* konumu kaydırmak için kullanılır */
+  width: 100%; /* genişlik */
+  height: 200px; /* yükseklik */
+  overflow: hidden; /* taşan içeriği gizle */
+}
+
+.image-box a {
+  display: block; /* tüm genişliği kaplar */
+  position: absolute; /* görselin üstüne linki ekler. */
+  width: 100%; /* genişlik */
+  height: 100%; /* yükseklik */
+  inset: 0; /* kenarları sıfırlar */
+  z-index: 2; /* hangisinin üstte olacağını belirler */
+  text-decoration: none; /* yazının dekorasyonu yok */
+  color: inherit; /* üstten renk alır */
+}
+
+.image-box img {
+  width: 100%; /* genişlik */
+  height: 100%; /* yükseklik */
+  object-fit: cover; /* görseli orantılı bir şekilde kırpar ve yerleştirir */
+  transition: transform 0.4s ease; /* geçiş süresi boyunca hafif hareket eder */
+  z-index: 1; /* hangisinin üstte olacağını belirler */
+}
+
+.image-box:hover img {
+  transform: scale(1.05); /* görsele hover ekleyerek görseli vurgular */
+}
+
+/* Üstteki küçük beyaz etiket */
+.label {
+  position: absolute; /* görselin üstüne yazıyı ekler */
+  top: 12px; /* üst */
+  left: 12px; /* sol */
+  background: rgba(255,255,255,0.9); /* arka plan rengi */
+  color: #222; /* yazı rengi */
+  font-size: 13px; /* yazının boyutu */
+  font-weight: 700; /* yazı genişliği */
+  padding: 4px 8px; /* ilk değer 4px üst ve alt , ikinci değer 8px sağ ve sol iç boşluk */
+  border-radius: 6px; /* kutunun köşelerini yuvarlak yapmak için */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* yumuşak, hafif, az gölge ekler */
+  z-index: 3; /* hangisinin üstte olacağını belirler */
+}
+
+/* Başlık */
+.kutu h4 {
+  font-size: 20px; /* yazı boyutu */
+  margin: 16px 0 8px 0; /* üstten boşluk değeri */
+  color: #222; /* yazı rengi */
+}
+
+/* paragraf */
+.kutu p {
+  font-size: 20px; /* yazı boyyutu */
+  color: #555; /* yazı rengi */
+  margin-bottom: 20px; /* paragrafın altına boşluk ekler */
+  padding: 0 12px; /* ilk değer 0 üst ve alt , ikinci değer 12px sağ ve sol iç boşluk */
+  line-height: 1.4; /* yazı boyutunun 1.4 katı olur */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+.white-background {
+  background-color: #fff; /* beyaz arka plan */
+  height: 50px; /* yükseklik - beyaz boşluk miktarı */
+}
+
+.vazo {
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi gri */
+  position: relative; /* görsel yerinde durur ama içindeki şeyler buna göre konumlanır */
+  width: 400px; /* görselin boyutu */
+  height: auto; /* görselin yüksekliği de genişliğe göre ayarlanır */
+  margin: 0 auto; /* sayfanın ortasına alır */
+  margin-top: 20px; /* üstten boşluk */
+}
+
+.vazo img {
+  margin-top: 20px; /* üstten boşluk */
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  width: 100%; /* yüzde yüz genişlik kaplar */
+  height: auto; /* görselin yüksekliği genişliğe göre ayarlanır */
+  display: block; /* görseli tam satır kaplar ve düzgün hizalar */
+  border-radius: 10px; /* kenar yumuşatma yuvarlak yapma */
+}
+
+.vazoyazi {
+  margin-top: 15px; /* resimle yazı arasındaki boşluk */
+  color: rgb(67, 187, 214); /* yazı rengi */
+  text-align: center; /* yazıyı yatay şekilde ortalar */
+  background: none;   /* arka planı kaldırır */
+  padding: 5px 10px; /* yazı etrafına iç boşluk ekler */
+  font-size: 55px;   /* yazının boyutunu ayarlar */
+  font-weight: bold; /* yazıyı kalın yapar */
+}
+
+.yazi{
+  margin-top: 20px; /* üstten boşluk */
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  text-align: center; /* ortalar */
+  font-size: 20px; /* yazı boyutu */
+}
+
+.baslik{
+  margin-top: 30px; /* üstten boşluk */
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  text-align: center; /* ortalar */
+  font-size: 30px; /* yazı boyutu */
+}
+
+.input-box{
+  margin-top: 50px; /* üstten boşluk */
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  font-size: 50px; /* yazı boyutu */
+  gap: 10px; /* input ve buton arası boşluk */
+}
+
+#email {
+  width: 400px; /* genişlik */
+  height: 40px; /* yükseklik */
+  font-size: 16px; /* yazı boyutu */
+  padding: 10px; /* iç boşluk */
+  border-radius: 5px; /* kenarları yuvarlatma */
+  border: 1px solid #ccc; /* kenarlık rengi */
+}
+
+#submit{
+  width: 400px; /* genişlik */
+  height: 40px; /* yükseklik */
+  font-size: 16px; /* yazı boyutu */
+  padding: 10px; /* iç boşluk */
+  border-radius: 5px; /* kenarları yuvarlatma */
+  border: 1px solid #ccc; /* kenarlık rengi */
+}
+
+.input-box input {
+  width: 300px; /* genişlik */
+  height: 50px; /* yükseklik */
+  font-size: 16px; /* yazı boyutu */
+  padding: 10px; /* iç boşluk */
+  border-radius: 5px; /* kenarları yuvarlatma */
+  border: 1px solid rgb(0, 0, 0); /* kenarlık rengi */
+}
+
+.input-box button.takipet {
+  height: 50px; /* yükseklik */
+  font-size: 16px; /* yazı boyutu */
+  padding: 0 20px; /* iç boşluk */
+  border-radius: 5px; /* kenarları yuvarlatma */
+  border: 1px solid #3589ce; /*kenarlık rengi */
+  background-color: #3589ce; /* arka plan rengi */
+  color: white; /* yazı rengi */
+  font-weight: bold; /* yazı kalın */
+  cursor: pointer; /* tıklanılabilir */
+}
+
+.linkler{
+  margin-top: 40px; /* üstten boşluk */
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  gap: 20px; /* aralarındaki boşluk */
+}
+
+.son{
+  margin-top: 20px; /* üstten boşluk */
+  display: flex; /* ortalar */
+  justify-content: center; /* ortalar */
+  align-items: center; /* dikey ortalar */
+  margin-bottom: 10px; /* linklerin altına boşluk ekler */
+}

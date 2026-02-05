@@ -1,0 +1,126 @@
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(234, 230, 224, 0.7);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.menu{
+  margin: 10px; /* üst kenar boşluk */
+  display: flex;
+  justify-content: center; /* yatay ortalar */
+  gap: 50px;
+  background: rgba(234, 230, 224, 0.7); /* arka plan renk */
+  min-height: 40px; /* minimum yükseklik */
+  margin-top: 10px; /* üst boşluk */
+  padding: 10px;
+}
+.menu a {
+  font-size: 22px; /* yazı boyutu */
+  text-decoration: none; /* linklerin altındaki çizgiyi kaldırır */
+  background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+  color: black; /* yazı rengi */
+}
+.fa:hover{
+  color: rgb(67, 187, 214);
+}
+
+.name{
+  position: relative; 
+  display: inline-block;
+  color:rgb(32, 155, 183); 
+}
+
+.icon{
+  font-size: 25px; /* yazı boyutu */
+  color: rgb(67, 187, 214); 
+}
+
+.store{
+  text-align: center; 
+  margin-top: 45px; /* üstten boşluk */
+  color: black;
+}
+
+.icons {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 10px; /* üstten boşluk */
+}
+
+.icons i {
+  font-size: 40px; /* yazı boyutu */
+}
+
+.store h1 {
+  font-size: 40px; /* yazı boyutu */
+  font-weight: 600;
+}
+
+.store h3 {
+  font-size: 30px; /* yazı boyutu */
+  font-weight: 500;
+}
+
+.store h5 {
+  font-size: 25px; /* yazı boyutu */
+  font-weight: 400;
+}
+
+.baslik1{
+  margin-top: 25px; /* üstten boşluk */
+  justify-content: center;
+}
+
+.baslik2{
+  margin-top: 30px; /* üstten boşluk */
+}
+
+.image-box {
+  margin-top: 40px; /* üstten boşluk */
+  position: absolute; /* resmin üstüne yazıyı ekler */
+  border-radius: 15px; /* kenarları yuvarlak yapar */
+  width: 500px; /* genişlik */
+  height: 450px; /* yükseklik */
+  cursor: pointer; /* tıklanabilir duruma gelmesini sağlar */
+  overflow: hidden; /* içerik taşmasın diye gizler ve görünmemesini sağlar */
+  display: flex; /* düzenli ve yatay hizalar */
+  justify-content: center; /* yatay ortalar */
+  align-items: center; /* dikey ortalar */
+  left: 50%; /* sol */
+  transform: translateX(-50%);
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center; 
+  transition: transform 0.4s ease;
+}
+
+.image-box:hover img {
+  transform: scale(1.05);
+}
+
+.linkler{
+  margin-top: 550px; /* üstten boşluk */
+  gap: 20px; /* aralarındaki boşluk değeri */
+  display: flex; /* düzenli ve yatay olmasını sağlar */
+  justify-content: center; /* yatay ortalar */
+  align-items: center; /* dikey ortalar */
+}
+
+.son{
+  margin-top: 20px; /* üstten boşluk */
+  display: flex; /* düzenli ve yatay hizalar */
+  justify-content: center; /* yatay ortalar */
+  align-items: center;/* dikey ortalar */
+  margin-bottom: 10px; /* aşağıdan boşluk bırakır */
+}

@@ -1,0 +1,131 @@
+*{
+    font-family: "Poppins", sans-serif; /* Yazı fontu */
+    margin: 0; /* dış boşluğu sıfırlar */
+    padding: 0; /* iç boşluğu sıfırlar */
+    box-sizing: border-box; /* genişlik ve yüksekliğe padding ve border ekler */
+}
+.body{
+    background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+    background-size: 1000px; /* arka plan boyutu */
+}
+.menu{
+    margin: 10px;     /* üstten boşluk */
+    display: flex;   /* düzenli hizalar */
+    justify-content: center;   /* yatay ortalar */
+    gap: 50px;       /* linklerin arasındaki boşluk */
+    background: rgba(234, 230, 224, 0.7); /* arka plan rengini ayarlar */
+    min-height: 40px; /* minimum yüksekliği ayarlar */
+    margin-top: 10px; /* üstten boşluk ayarlar */
+    padding: 10px;    /* iç boşluk ayarlar */
+}
+.menu a {
+    font-size: 22px; /* linklerin yazı boyutunu büyütür */
+    text-decoration: none; /* linkin alt çizgisini kaldırır */
+    background-color: rgba(234, 230, 224, 0.7); /* arka plan rengi */
+    color: black; /* yazı rengini belirler */
+}
+.fa:hover{
+    color: rgb(67, 187, 214); /*icon'a tıklandığında değişecek olan rengi belirler */
+}
+
+.wrapper{
+    background-color: rgb(10,147,178); /* arka plan rengi */
+    position: relative; /* konumunu kaydırmak için kullanılır */
+    height: 50vh; /* yükseklik */
+    color: white; /* yazı rengi */
+    line-height: 40px; /* satır yüksekliği */
+    text-align: center; /* ortalar */
+    justify-content: center; /* ortalar */
+    align-items: center; /* her şeyi ortalar */
+    display: flex; /* yatay hizalar */
+}
+.wrapper h1{
+    margin-top: -100px; /* üstten boşluk */
+}
+
+.h1{
+    padding: 10rem; /* iç boşluk */
+}
+
+.custom-shape-divider-bottom-1760515634{
+    position: absolute; /* sayfa içinde mutlak konumlandırma */
+    bottom: 0; /* en alta sabitler */
+    left: 0; /* soldan hizala */
+    width: 100%; /* tam genişlik */
+    overflow: hidden; /* taşan kısmı gizle */
+    line-height: 0; /* boşluk oluşmasını engelle */
+}
+
+.custom-shape-divider-bottom-1760515634 svg{
+    position: relative; /* kendi konumuna göre ayarlar */
+    display: block; /* satır boşluklarını kaldır */
+    width: calc(100% + 1.3px); /* kenar boşluğunu önler */
+}
+
+.custom-shape-divider-bottom-1760515634 .shape-fill{
+    fill: #FFFFFF; /* şeklin rengi */
+}
+
+.icon{
+  font-size: 25px;  /* yazı boyutu */
+  color: rgb(67, 187, 214); /* yazı rengi */
+}
+
+.ben{
+    background-color: rgba(234, 230, 224, 0.7);
+    display: flex; /* yatay hizalar */
+    align-items: center; /* dikey ortalar */
+    gap: 40px; /* aralarındaki boşluk değeri */
+}
+
+.kişi{
+    width: 300px; /* genişlik */
+    height: 300px; /* yükseklik */
+    border-radius: 50%; /* kenar yuvarlak kısmı */
+    overflow: hidden; /* içerik taşmasın diye gizler ve görünmemesini sağlar. */
+    flex: 0 0 300px; /* genişliği 300px sabit */
+    background: #e0e0e0; /* arka plan rengi */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* hafif gölge */
+    margin-right: 20px; /* sağ tarfa 20 pixel boşluk bırakır */
+}
+
+.kişi img{
+    width: 100%; /* genişlik */
+    height: 100%; /* yükseklik */
+    object-fit: cover; /* görseli orantılı bir şekilde kırpar ve yerleştirir */
+    display: block; /* tüm genişliği kaplar */
+}
+
+.text{
+    display: flex; /* yatay hizalar */
+    flex-direction: column; /* ortalar */
+    text-align: center; /* yazıyı ortalar */
+}
+
+.text h1{
+    color: rgb(98, 136, 192); /* yazı rengi */
+    margin: 0 0 8px 0; /* yatay ortalar */
+    font-size: 35px; /* yazı boyutu */
+}
+
+.text p{
+    color: black; /* yazı rengi */
+    margin: 0; /* dış boşlukların hepsini kaldırır */
+    font-size: 18px; /* yazı boyutu */
+}
+
+.linkler{
+    margin-top: 80px; /* üst boşluk */
+    display: flex; /* ortalar */
+    gap: 20px; /* aralarındaki boşluk değeri */
+    align-items: center; /* dikey ortalar */
+    justify-content: center; /* ortalar */
+}
+
+.son{
+    margin-top: 20px; /* üst boşluk */
+    display: flex; /* ortalar */
+    align-items: center; /* dikey ortalar */
+    justify-content: center; /* ortalar */
+    margin-bottom: 10px; /* linklerin altına boşluk ekler */
+}
